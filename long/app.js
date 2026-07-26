@@ -33,7 +33,7 @@ function render() {
 function move(direction) {
   if (mobile()) page = direction === "next" ? Math.min(PAGE_COUNT,page+1) : Math.max(1,page-1);
   else if (direction === "next") page = page === 1 ? 2 : Math.min(PAGE_COUNT,(page%2===0?page:page-1)+2);
-  else page = page === PAGE_COUNT ? 14 : ((page%2===0?page:page-1)<=2 ? 1 : (page%2===0?page:page-1)-2);
+  else page = page === PAGE_COUNT ? 30 : ((page%2===0?page:page-1)<=2 ? 1 : (page%2===0?page:page-1)-2);
   stage.classList.add("turning"); setTimeout(()=>stage.classList.remove("turning"),220);
   render();
 }
