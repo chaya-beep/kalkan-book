@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8eeee">
+  <meta name="description" content="ספר הדרך והמותג של קלכאן — המהדורה המלאה">
+  <title>קלכאן | ספר הדרך והמותג</title>
+  <link rel="icon" href="brand/kalkan-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="book-app">
+    <div class="ambient one"></div><div class="ambient two"></div>
+    <header>
+      <img class="logo" src="brand/kalkan-logo.png" alt="קלכאן">
+      <div class="title"><small>המהדורה המלאה</small><h1>ספר הדרך והמותג</h1></div>
+      <button id="fullscreen" class="round" aria-label="מסך מלא">⛶</button>
+    </header>
+    <section class="reader" aria-label="ספר קלכאן לדפדוף">
+      <button id="previous" class="nav previous" aria-label="לעמודים הקודמים"><b>→</b><span>הקודם</span></button>
+      <div id="stage" class="stage single" aria-live="polite"></div>
+      <button id="next" class="nav next" aria-label="לעמודים הבאים"><b>←</b><span>הבא</span></button>
+    </section>
+    <footer>
+      <span id="progress" class="progress">כריכה</span>
+      <div class="track"><i id="bar"></i></div>
+      <span class="hint">אפשר לדפדף גם באמצעות החצים במקלדת או בהחלקה</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
